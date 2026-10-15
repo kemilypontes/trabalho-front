@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261015-04-7abc9b0","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário</title>
+  <style>
+    :root {
+      --ink: #123447;
+      --blue: #075c81;
+      --green: #087b68;
+      --line: #b8d3d8;
+      --focus: #f2a900;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: "Work Sans", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(135deg, #073e60 0%, #087b75 100%);
+    }
+    .page-shell {
+      width: 100%;
+      padding: clamp(20px, 5vw, 64px) 20px;
+    }
+    .content { width: 100%; max-width: 860px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 18px;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,.48);
+      border-radius: 100px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .form-card {
+      overflow: hidden;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 26px 70px rgba(1, 28, 45, .27);
+    }
+    .card-header {
+      padding: clamp(26px, 5vw, 48px) clamp(22px, 5vw, 52px);
+      color: #fff;
+      background: linear-gradient(115deg, #08638a, #087f73);
+    }
+    h1 { margin: 0; font-weight: 700; line-height: 1.15; letter-spacing: -.035em; }
+    .intro { margin: 14px 0 0; line-height: 1.6; }
+    .form-body { padding: clamp(24px, 5vw, 48px) clamp(22px, 5vw, 52px); }
+    fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+    legend {
+      width: 100%;
+      margin-bottom: 22px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--line);
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .field { min-width: 0; }
+    .wide { grid-column: 1 / -1; }
+    label { display: block; margin-bottom: 8px; font-weight: 600; }
+    input:not([type="checkbox"]), select, textarea {
+      display: block;
+      width: 100%;
+      min-height: 48px;
+      padding: 11px 14px;
+      border: 1.5px solid #8daeb8;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+    textarea { min-height: 130px; resize: vertical; }
+    input::placeholder, textarea::placeholder { color: #527181; opacity: 1; }
+    .hint { margin: 7px 0 0; color: #456476; font-size: 13px; line-height: 1.5; }
+    .terms-group { margin-top: 30px; }
+    .terms-group legend { margin-bottom: 18px; }
+    .check-row { display: flex; align-items: flex-start; gap: 12px; }
+    .check-row input { width: 20px; height: 20px; margin: 2px 0 0; flex: none; accent-color: var(--green); }
+    .check-row label { margin: 0; line-height: 1.55; }
+    button {
+      min-height: 50px;
+      margin-top: 30px;
+      padding: 12px 24px;
+      border: 0;
+      border-radius: 10px;
+      background: #086d61;
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+    }
+    button:hover:not(:disabled) { background: #075348; transform: translateY(-1px); }
+    button:disabled { cursor: progress; opacity: .72; }
+    :is(input, select, textarea, button):focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+    .status { margin: 18px 0 0; padding: 13px 16px; border-radius: 10px; line-height: 1.5; }
+    .success { background: #e0f5eb; color: #14533a; }
+    .error { background: #fff0e8; color: #853416; }
+    [hidden] { display: none !important; }
+    @media (max-width: 620px) {
+      .fields { grid-template-columns: 1fr; gap: 18px; }
+      button { width: 100%; }
+      .form-card { border-radius: 18px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/0d3107a88dd31248.editing_sdk.js" type="text/javascript" integrity="sha512-YxJYPIC1TZ/l8asjpXojbfYA1LiLTr3Fh6BPE6fDLKLWTkDIhVGqsl6xMTuKf5GPOv3sZeQW9jrwgZcsiAARIQ=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: linear-gradient(135deg, rgb(7, 62, 96) 0%, rgb(8, 123, 117) 100%);">
+  <div class="page-shell">
+   <div class="content">
+    <header>
+     <p data-template-id="course-tag" class="canva-tag eyebrow" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 13px;">Programação Front-End · Questão 3</p>
+    </header>
+    <main>
+     <article data-template-id="form-card" class="canva-card form-card" style="background: rgb(255, 255, 255);">
+      <div data-template-id="card-header" class="canva-header card-header" style="background: linear-gradient(115deg, rgb(8, 99, 138), rgb(8, 127, 115));">
+       <h1 data-template-id="page-title" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Modelo de formulário acessível</h1>
+       <p data-template-id="form-instruction" class="canva-text intro" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Preencha os campos. Os itens marcados com * são obrigatórios.</p>
+      </div>
+      <div class="form-body">
+       <form id="contact-form" novalidate="">
+        <fieldset><legend data-template-id="contact-legend" class="canva-text" style="color: rgb(7, 92, 129); font-weight: 700; font-style: normal; font-size: 16px;">Seus dados e mensagem</legend>
+         <div class="fields">
+          <div class="field wide"><label data-template-id="name-label" class="canva-text" for="nome" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">Nome completo *</label> <input id="nome" name="nome" type="text" autocomplete="name" required="" maxlength="120">
+          </div>
+          <div class="field"><label data-template-id="email-label" class="canva-text" for="email" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">E-mail *</label> <input id="email" name="email" type="email" autocomplete="email" required="" maxlength="254">
+          </div>
+          <div class="field"><label data-template-id="phone-label" class="canva-text" for="telefone" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">Telefone</label> <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="phone-hint" maxlength="30">
+           <p id="phone-hint" data-template-id="phone-hint-text" class="canva-text hint" style="color: rgb(69, 100, 118); font-weight: 400; font-style: normal; font-size: 13px;">Opcional. Inclua o DDD, se possível.</p>
+          </div>
+          <div class="field wide"><label data-template-id="subject-label" class="canva-text" for="assunto" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">Assunto *</label> <select id="assunto" name="assunto" required=""> <option data-template-id="subject-placeholder" value="" selected="" disabled="" style="font-weight: 400; font-style: normal; font-size: 16px;">Selecione um assunto</option> <option data-template-id="subject-question" value="Dúvida" style="font-weight: 400; font-style: normal; font-size: 16px;">Dúvida</option> <option data-template-id="subject-feedback" value="Sugestão" style="font-weight: 400; font-style: normal; font-size: 16px;">Sugestão</option> <option data-template-id="subject-other" value="Outro" style="font-weight: 400; font-style: normal; font-size: 16px;">Outro</option> </select>
+          </div>
+          <div class="field wide"><label data-template-id="message-label" class="canva-text" for="mensagem" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">Mensagem *</label> <textarea id="mensagem" name="mensagem" required="" maxlength="5000" aria-describedby="message-hint"></textarea>
+           <p id="message-hint" data-template-id="message-hint-text" class="canva-text hint" style="color: rgb(69, 100, 118); font-weight: 400; font-style: normal; font-size: 13px;">Descreva sua solicitação com clareza.</p>
+          </div>
+         </div>
+        </fieldset>
+        <fieldset class="terms-group"><legend data-template-id="terms-legend" class="canva-text" style="color: rgb(7, 92, 129); font-weight: 700; font-style: normal; font-size: 16px;">Declaração</legend>
+         <div class="check-row"><input id="aceite-termos" name="aceite_termos" type="checkbox" required=""> <label data-template-id="terms-label" class="canva-text" for="aceite-termos" style="color: rgb(18, 52, 71); font-weight: 600; font-style: normal; font-size: 16px;">Li e aceito os termos para o envio desta mensagem. *</label>
+         </div>
+        </fieldset><button id="submit-button" data-template-id="submit-button" class="canva-button" type="submit" style="background: rgb(8, 109, 97);"> <span data-template-id="submit-label" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Enviar formulário</span> <span data-template-id="sending-label" class="canva-text" hidden="" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Enviando…</span> </button>
+        <div role="status" aria-live="polite" aria-atomic="true">
+         <p id="success-message" data-template-id="success-message" class="canva-text status success" hidden="" style="background: rgb(224, 245, 235); color: rgb(20, 83, 58); font-weight: 400; font-style: normal; font-size: 16px;">Formulário enviado com sucesso! Sua resposta foi salva.</p>
+         <p id="error-message" data-template-id="error-message" class="canva-text status error" hidden="" style="background: rgb(255, 240, 232); color: rgb(133, 52, 22); font-weight: 400; font-style: normal; font-size: 16px;">Não foi possível confirmar o envio. Confira sua conexão antes de tentar novamente.</p>
+        </div>
+       </form>
+      </div>
+     </article>
+    </main>
+   </div>
+  </div>
+  <script>
+    const form = document.getElementById("contact-form");
+    const submitButton = document.getElementById("submit-button");
+    const submitLabel = document.querySelector('[data-template-id="submit-label"]');
+    const sendingLabel = document.querySelector('[data-template-id="sending-label"]');
+    const successMessage = document.getElementById("success-message");
+    const errorMessage = document.getElementById("error-message");
+    let sdkReady = false;
+
+    function showError() {
+      successMessage.hidden = true;
+      errorMessage.hidden = false;
+    }
+
+    async function initialize() {
+      const result = await window.dataSdk.init({ onDataChanged() {} });
+      sdkReady = result.isOk;
+      if (!sdkReady) showError();
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      successMessage.hidden = true;
+      errorMessage.hidden = true;
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      if (!sdkReady) {
+        showError();
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitLabel.hidden = true;
+      sendingLabel.hidden = false;
+
+      const record = {
+        nome: form.elements.nome.value.trim(),
+        email: form.elements.email.value.trim(),
+        telefone: form.elements.telefone.value.trim(),
+        assunto: form.elements.assunto.value,
+        mensagem: form.elements.mensagem.value.trim(),
+        aceite_termos: form.elements.aceite_termos.checked
+      };
+
+      try {
+        const result = await window.dataSdk.create(record);
+        if (!result.isOk) {
+          showError();
+          return;
+        }
+        form.reset();
+        successMessage.hidden = false;
+        successMessage.focus();
+      } catch {
+        showError();
+      } finally {
+        submitButton.disabled = false;
+        submitLabel.hidden = false;
+        sendingLabel.hidden = true;
+      }
+    });
+
+    initialize();
+  </script>
+ 
+</body></html>
